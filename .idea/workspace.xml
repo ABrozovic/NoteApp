@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c083f66d-18e7-45b7-9d67-9393bbfc649b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NoteApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/components/MainNav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/sass/abstracts/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/sass/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/sass/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/sass/base/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/views/NotesView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/src/views/StatsView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/tsconfig.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-notes/vite.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BH2fK6ODJx8m5lN4X3TKLTgdjR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Z\\Desktop\\Github\\ABrozovic\\NoteApp\\vue-notes\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c083f66d-18e7-45b7-9d67-9393bbfc649b" name="Changes" comment="" />
+      <created>1656548794826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656548794826</updated>
+      <workItem from="1656548796714" duration="5301000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
