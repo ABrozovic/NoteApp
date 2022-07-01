@@ -7,8 +7,26 @@ body{
   box-sizing: border-box;
 }
 
-.container {
-  max-width: $default-max-width;
-  padding: 0 2rem;
-  margin: 0 auto;
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-grey-dark-2;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-L;
+  padding: 1em 2em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgba($color-primary, 0.3);
 }
