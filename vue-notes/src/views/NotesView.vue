@@ -1,9 +1,15 @@
+<script setup>
+import Note from '@/components/Note.vue'
+</script>
 <template>
-  <div class="notes">
-    <h1>Notes</h1>
-  </div>
+
+    <Note></Note>
+
 </template>
 
-<style>
+<style lang="scss" scoped>
+.notes{
+
+}
 
 </style>
