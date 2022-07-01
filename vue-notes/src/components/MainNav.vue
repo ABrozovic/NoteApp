@@ -9,7 +9,7 @@
     </nav>
   </header>
 
-  <RouterView/>
+
 </template>
 
 <script setup>
@@ -19,12 +19,12 @@
 .header {
   padding: 0 5rem;
   height: 4rem;
+  background-image: linear-gradient(to bottom right, $color-primary, $color-primary-dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to top left, $color-primary, $color-primary-light);
   box-shadow: bottom-shadow(2);
-
+  z-index: 99;
 
   &__logo {
     height: 100%;
@@ -38,18 +38,22 @@
     list-style: none;
     display: flex;
     gap: 3rem;
-    padding-right: 2rem;
     font-size: $font-size-L;
+    text-transform: uppercase;
 
   }
-  &__links{
-    &:link,&:visited{
+
+  &__links {
+    &:link, &:visited {
       text-decoration: none;
-      padding: 1rem 3rem;
       color: $color-white;
       font-size: $font-size-XL;
       font-weight: $font-weight-semibold;
-      letter-spacing: 1.2px;
+      letter-spacing: 1.5px;
+    }
+
+    &:hover, &:active {
+      color: $color-grey-light-2;
     }
   }
 }
