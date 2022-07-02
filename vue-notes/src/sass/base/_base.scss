@@ -23,10 +23,10 @@ body{
   font-family: inherit;
   transition: all 0.3s;
   text-align: center;
-  width: 100%;
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.btn:focus:focus-visible{
   background-color: rgba($color-primary, 0.3);
 }

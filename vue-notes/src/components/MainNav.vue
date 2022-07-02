@@ -44,6 +44,7 @@
   }
 
   &__links {
+    transition: all 0.3s;
     &:link, &:visited {
       text-decoration: none;
       color: $color-white;

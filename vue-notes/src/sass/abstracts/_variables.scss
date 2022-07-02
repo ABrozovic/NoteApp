@@ -1,7 +1,7 @@
 // COLORS
 $color-primary: #55c57a;
 $color-primary-light: rgba(126, 213, 97, 1);
-$color-primary-dark: rgb(52, 179, 143);
+$color-primary-dark: rgb(25, 128, 102);
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -10,8 +10,8 @@ $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
 $color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-light-3: #b8b8b8;
+$color-grey-light-2: #e6e6e6;
+$color-grey-light-3: #cccccc;
 
 $color-grey-dark-1: #333;
 $color-grey-dark-2: #555;
@@ -42,3 +42,7 @@ $default-flow-space: 1em;
 
 // Main Style
 $default-max-width: 80rem;
+
+// Border-Radius
+$border-radius-sm: 4px;
+$border-radius-m: 9px;

@@ -28,9 +28,8 @@ const notes = ref([{
 .note {
   background-color: $color-white;
   border-radius: 9px;
-  margin: 0 3rem;
   padding: 0.25rem 1.5rem;
-  box-shadow: bottom-shadow(3);
+  @include card(2);
 
   &__content {
     color: $color-grey-dark-2;
@@ -39,8 +38,9 @@ const notes = ref([{
     display: flex;
     align-items: center;
     height: 6rem;
-
+    overflow: scroll;
   }
+
   &__divider {
     border-top: 2px solid $color-grey-light-3;
   }
@@ -48,16 +48,31 @@ const notes = ref([{
   &__buttons {
     display: flex;
     justify-content: space-around;
-
+    width: 100%;
   }
-  &__button{
-    &--delete{
-      &:hover,&:active{
+
+  &__button {
+    &--delete {
+      &:hover, &:active, &:focus:focus-visible {
         background-color: rgba(red, 0.2);
       }
     }
   }
 }
 
+.btn {
+  width: inherit;
+}
 
+@media (max-width: 38rem) {
+
+  .note {
+    font-size: $font-size-S;
+
+    &__content {
+      font-size: inherit;
+    }
+
+  }
+}
 </style>

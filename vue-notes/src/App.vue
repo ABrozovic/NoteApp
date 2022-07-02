@@ -19,6 +19,15 @@ import MainNav from '@/components/MainNav.vue'</script>
   box-sizing: inherit;
 }
 
+* :focus{
+  outline: none;
+  box-shadow: 0 0 0 0.3em $color-primary-light;
+}
+* :focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
 h1, h2, h3, p {
   margin: 0;
 }
