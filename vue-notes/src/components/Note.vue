@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import {computed, defineEmits, defineProps} from "vue";
+import {computed, defineProps} from "vue";
+import {useStoreNotes} from "@/stores/storeNotes";
 
+const storeNotes = useStoreNotes();
 const props = defineProps({
   note: {
     type: Object,
     required: true
   }
 });
-const emit = defineEmits([
-  'deleteClicked', 'editClicked'
-]);
+
 
 const characterLength = computed(() => {
   let noteLength = props.note.content.length;
@@ -20,8 +20,8 @@ const characterLength = computed(() => {
 const handleEditClicked = () => {
 
 }
-const handleDeleteClicked = () => {
-  emit('deleteClicked', props.note.id);
+const deleteNote = () => {
+  storeNotes.deleteNote(props.note.id);
 }
 </script>
 <template>
@@ -37,7 +37,7 @@ const handleDeleteClicked = () => {
       <a class="btn note__button--edit"
          href="#" @click.prevent="handleEditClicked">Edit</a>
       <a class="btn note__button--delete"
-         href="#" @click.prevent="handleDeleteClicked">Delete</a>
+         href="#" @click.prevent="deleteNote">Delete</a>
     </div>
   </div>
 </template>

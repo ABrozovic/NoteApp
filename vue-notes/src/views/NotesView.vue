@@ -1,30 +1,21 @@
 <script lang="ts" setup>
 import Note from '@/components/Note.vue'
 import {ref} from "vue";
-import {v4 as uuid} from 'uuid';
-
-type note = {
-  id: string,
-  content: string
-}
+import {useStoreNotes} from "@/stores/storeNotes";
+import {storeToRefs} from "pinia";
 
 const newNote = ref('');
 const newNoteRef = ref();
-const notes = ref<Array<note>>([]);
+
+const storeNotes = useStoreNotes();
+const {notes} = storeToRefs(useStoreNotes())
 
 const addNote = () => {
-  let tmpNote: note = {
-    id: uuid(),
-    content: newNote.value
-  }
-  notes.value.unshift(tmpNote);
+  storeNotes.addNote(newNote.value);
   newNote.value = '';
   newNoteRef.value.focus();
 }
 
-const deleteNote= (idToDelete:string)=> {
-  notes.value= notes.value.filter(note => {return note.id!== idToDelete});
-}
 </script>
 <template>
   <div class="note-composer u-margin-bottom-small">
@@ -34,9 +25,9 @@ const deleteNote= (idToDelete:string)=> {
       Add
     </button>
   </div>
-  <Note @deleteClicked="deleteNote"
-        v-for="note in notes" :key="note.id"
-        :note="note"/>
+  <Note v-for="note in notes"
+        :key="note.id" :note="note"
+  />
 </template>
 
 <style lang="scss" scoped>
