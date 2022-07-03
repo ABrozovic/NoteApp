@@ -1,12 +1,42 @@
-<script setup>
-import Note from '@/components/Note.vue'</script>
+<script lang="ts" setup>
+import Note from '@/components/Note.vue'
+import {ref} from "vue";
+import {v4 as uuid} from 'uuid';
+
+type note = {
+  id: string,
+  content: string
+}
+
+const newNote = ref('');
+const newNoteRef = ref();
+const notes = ref<Array<note>>([]);
+
+const addNote = () => {
+  let tmpNote: note = {
+    id: uuid(),
+    content: newNote.value
+  }
+  notes.value.unshift(tmpNote);
+  newNote.value = '';
+  newNoteRef.value.focus();
+}
+
+const deleteNote= (idToDelete:string)=> {
+  notes.value= notes.value.filter(note => {return note.id!== idToDelete});
+}
+</script>
 <template>
   <div class="note-composer u-margin-bottom-small">
-    <textarea class="note-composer__text" placeholder="Add a note"></textarea>
-    <a href="#" class="btn note-composer__button">Add</a>
+    <textarea ref="newNoteRef" v-model="newNote" class="note-composer__text" placeholder="Add a note"></textarea>
+    <button :disabled="!newNote" class="btn note-composer__button"
+            @click="addNote">
+      Add
+    </button>
   </div>
-  <Note></Note>
-
+  <Note @deleteClicked="deleteNote"
+        v-for="note in notes" :key="note.id"
+        :note="note"/>
 </template>
 
 <style lang="scss" scoped>
@@ -48,5 +78,4 @@ import Note from '@/components/Note.vue'</script>
   }
 
 }
-
 </style>
