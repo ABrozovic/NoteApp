@@ -34,8 +34,8 @@ const deleteNote = () => {
     </div>
     <hr class="note__divider">
     <div class="note__buttons">
-      <a class="btn note__button--edit"
-         href="#" @click.prevent="handleEditClicked">Edit</a>
+      <router-link :to="`/editNote/${note.id}`" class="btn note__button--edit"
+         href="#" @click.prevent="handleEditClicked">Edit</router-link>
       <a class="btn note__button--delete"
          href="#" @click.prevent="deleteNote">Delete</a>
     </div>
@@ -80,7 +80,8 @@ const deleteNote = () => {
     text-align: end;
     font-size: $font-size-S;
     text-transform: uppercase;
-    color: $color-grey-light-3
+    color: $color-grey-light-3;
+    font-weight: $font-weight-bold;
   }
 
 
@@ -112,9 +113,14 @@ const deleteNote = () => {
 @media (max-width: 38rem) {
 
   .note {
-    font-size: $font-size-S;
+    font-size: $font-size-M;
 
     &__content {
+      font-size: inherit;
+    }
+    [class*="note__button--"] {
+      width: 100%;
+      padding: 0.5em 0;
       font-size: inherit;
     }
 
