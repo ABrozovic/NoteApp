@@ -92,12 +92,12 @@ const deleteNote = () => {
   &__buttons {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+
   }
 
   [class*="note__button--"] {
-    width: 100%;
-    padding: 0.5em 0;
+    flex-grow: 1;
+    padding: 0.5em;
   }
 
   &__button {
@@ -119,7 +119,6 @@ const deleteNote = () => {
       font-size: inherit;
     }
     [class*="note__button--"] {
-      width: 100%;
       padding: 0.5em 0;
       font-size: inherit;
     }
